@@ -150,7 +150,7 @@ Once the backend is running, access the interactive API documentation at:
 PORT=5000
 NODE_ENV=development
 MONGODB_URI=mongodb://localhost:27017/scalable_api
-JWT_SECRET=your_super_secret_jwt_key_change_this_in_production
+JWT_SECRET=secret456
 JWT_EXPIRE=7d
 JWT_REFRESH_SECRET=your_refresh_token_secret_change_this
 JWT_REFRESH_EXPIRE=30d
