@@ -1,0 +1,28 @@
+# ⚠️ COPY THIS CONTENT TO YOUR backend/.env FILE
+# The @ symbol in your password needs to be URL-encoded as %40
+
+# Server Configuration
+PORT=5000
+NODE_ENV=development
+
+# Database Configuration
+# Your MongoDB Atlas URI with URL-encoded password (@  becomes %40)
+MONGODB_URI=mongodb+srv://banuprakashpuri_db_user:Prakash%409533@cluster0.d7d7ylk.mongodb.net/scalable_api?retryWrites=true&w=majority&appName=Cluster0
+
+# JWT Configuration
+JWT_SECRET=my_super_secret_jwt_key_change_this_12345_banuprakash
+JWT_EXPIRE=7d
+JWT_REFRESH_SECRET=my_refresh_token_secret_change_this_67890_banuprakash
+JWT_REFRESH_EXPIRE=30d
+
+# CORS Configuration
+CORS_ORIGIN=http://localhost:3000
+
+# Rate Limiting
+RATE_LIMIT_WINDOW_MS=900000
+RATE_LIMIT_MAX_REQUESTS=100
+
+# Redis Configuration (Optional)
+REDIS_HOST=localhost
+REDIS_PORT=6379
+REDIS_PASSWORD=
